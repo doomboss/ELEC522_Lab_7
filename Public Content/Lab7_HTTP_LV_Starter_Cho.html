@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	meter{ 
+		-webkit-transform: 	rotate(270deg) translateY(-90px) translateX(128px);
+		-moz-transform: 	rotate(270deg) translateY(-90px) translateX(128px);
+		-o-transform: 		rotate(270deg) translateY(-90px) translateX(128px);
+		transform:  		rotate(270deg) translateY(-90px) translateX(128px);
+	}
+</style>
+Hello I'm Onyi <br>
+</head>
+<body >
+<div id="main" >
+<button type="button" id="address" name="setAddress" onclick="setAddress()">Change Address</button>
+<input type="text" name="serverAddress" id="serverAddress" style="border: 3px solid white;padding: 10px;
+	-webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); " size='100' disabled >
+<p>
+<! Make a rectangle to draw in, called a canvas >
+<canvas id="mainCanvas" width="600" height="300" style="border:1px solid #d3d3d3;"></canvas>
+<! Make a meter to show scalar values >
+<meter value="0" min="0" max="125" style="height:50px; width:250px" id="meter"> Temperature Meter </meter> 
+ <br> 
+Current value of the Temperature Sensor is <span id="tempVal">0</span> C
+</p>
+<button type="button" id="timer" name="Timer" onclick="setTimer()">Change Timer</button>
+<input type="text" name="timerBox" id="timerBox" style="-webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); "
+			disabled>
+<! Edit filename so matches the actual JavaScript filename, located in same folder >
+<script src="Lab7_HTTP_LV_Starter_Cho.js"></script>
+</div>
+</body>
+</html>
